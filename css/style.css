@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+#body {
+  margin-top: 100px;
+  height: 700px;
+}
+
+.container {
+  margin-left: 5%;
+  margin-bottom: 100px;
+}
+.shopPar2{
+  cursor: pointer;
+}
+#menu-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#indicator {
+  height: 2px;
+  background: #007bff;
+  position: absolute;
+  bottom: -2px;
+  transition: all 0.3s ease;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+.review-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+
+  align-items: center;
+}
+
+.review-item h5 {
+  margin: 0 10px 0 0;
+  display: inline;
+}
+.review-item img {
+  margin: 0 10px 0 0;
+  display: inline;
+}
+
+.review-item p {
+  flex-grow: 1;
+  color: gray;
+  margin-top: 20px;
+  margin-left: 10px;
+  
+}
+
+.review-item .like-button {
+  cursor: pointer;
+  color: #007bff;
+  position: relative;
+  left: 1070px;
+}
+
+
+.review-item img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#review-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#review-form input {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 2px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+#review-form textarea {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 2px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#review-form button {
+  border: 1px solid gray;
+  border-radius: 2px;
+  color: white;
+  margin: auto;
+  background: #000;
+  padding: 10px 2px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+
+.container h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 100px;
+  padding: 25px 0px;
+}
+.container h1 {
+  font-size: 24px;
+  margin-left: 100px;
+  margin-top: 100px;
+  font-weight: 700;
+  padding: 25px 0px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 5px;
+  width: 20%;
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  transition: 400ms;
+}
+.knife {
+  width: 70%;
+  height: auto;
+}
+
+.card-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.size {
+  font-size: 13px;
+}
+
+.stars {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heart {
+  width: 20px;
+  cursor: pointer;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.reviews {
+  padding: 5px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.size_material {
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+}
+
+.material {
+  font-size: 13px;
+}
+
+.compare {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.outfit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.outfit_img {
+  display: flex;
+  height: 50%;
+}
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.head {
+  width: 100%;
+  height: 230px;
+}
+
+.firstDiv {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titles {
+  width: 30%;
+  height: 70px;
+  margin-left: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.profile {
+  width: 20%;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Первый слой Закончен */
+
+.secondDiv {
+  width: 100%;
+  height: 90px;
+  background-color: #ecf1f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoInp {
+  width: 50%;
+  height: 90px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inp {
+  width: 320px;
+  height: 40px;
+  border-radius: 3px;
+  border-color: #04040480;
+  background-color: #07070708;
+  padding-left: 20px;
+}
+
+.actions {
+  width: 45%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.locationn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.locPar {
+  font-weight: 700;
+}
+
+.number {
+  width: 130px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.numPar {
+  color: #e8aa31;
+}
+
+.favShopIcons {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shopPar2 {
+  color: #e8aa31;
+}
+
+/* Второй слой Закончен */
+
+.thirdDiv {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.catPar1 {
+  margin-top: 25px;
+  padding-bottom: 22px;
+  color: #e8aa31;
+  border-bottom: 3px solid #e8aa31;
+}
+
+/* Header закончен !!! */
+
+.main {
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fefefe;
+  box-shadow: -1px 1px 6px 0px lightgray;
+}
+
+/* footer start  */
+.footerBig {
+  width: 100%;
+  background-color: black;
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  padding-top: 50px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.footer-section a {
+  text-decoration: none;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+.footer-section a:hover {
+  color: #fff;
+}
+.hr {
+  width: 86%;
+  margin: auto;
+  border: none;
+  border-top: 1px solid #333;
+}
+
+.footer2 {
+  width: 86%;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+}
+
+.footer-section2 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section2 h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.footer-section2 p,
+.footer-section a {
+  color: #ccc;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+.footer-section2 :hover {
+  color: #fff;
+}
+
+.subscribe-form input[type="email"] {
+  width: 200px;
+  background-color: #ffffff0d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.subscribe-form button {
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+}
+.subscribe-form button:hover {
+  background-color: #ffaa00;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  padding: 10px;
+}
+
+.agreementText {
+  color: white;
+}
+
+.hr2 {
+  width: 86%;
+  margin: auto;
+  border: none;
+  border-top: 1px solid #333;
+}
+
+.text {
+  width: 86%;
+  padding: 20px;
+  color: #ffffffcc;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Характеристики */
+
+.characteristic-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.characteristic-section {
+  width: 30%;
+}
+
+.characteristic-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.characteristic-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.characteristic-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.characteristic-section li span {
+  color: #333;
+}
+
+.characteristic-section li strong {
+  font-weight: bold;
+}
+
+/* Общие стили для вкладок */
+#menu-container {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tab {
+  padding: 15px 30px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+#indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #fcb415;
+  width: 0;
+  transition: width 0.3s, left 0.3s;
+}
+
+/* Контейнер для содержимого */
+#content-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Выпадающие списки (селекты) */
+select {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  width: 300px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  appearance: none;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  display: block;
+  margin-right: 15px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #fcb415;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.deliveryOption {
+  width: 90%;
+  height: 100px;
+  display: flex;
+}
+
+.deliveryOption img {
+  width: 10%;
+}
+
+.container2 {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.container label {
+  width: 90px;
+  margin-top: 10px;
+}
+
+.textContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 40px;
+}
+
+.textContainer span {
+  margin-left: 550px;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  display: none;
+}
+
+.content p {
+  margin-bottom: 40px;
+}
+
+.content.active {
+  display: block;
+}
+/* Стили для модального окна */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+}
